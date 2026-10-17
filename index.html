@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <title>O&B STORE | تسوّق بأناقة</title>
+  <meta name="description" content="O&B STORE — اكتشف منتجات مختارة بعناية، اطلب بسهولة وتواصل معنا لتأكيد طلبك.">
+  <style>
+    :root{--bg:#090909;--panel:#141414;--gold:#d7b46a;--gold2:#f4df9b;--text:#f7f4ec;--muted:#b8b3a7;--line:#343027}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.7}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    .top{border-bottom:1px solid #28251e;background:#080808;position:sticky;top:0;z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 0}
+    .brand{font-family:Georgia,serif;direction:ltr;display:flex;align-items:center;gap:10px;font-weight:bold;letter-spacing:2px;font-size:23px;color:var(--gold2)}
+    .brand-mark{border:1px solid var(--gold);border-radius:50%;width:42px;height:42px;display:grid;place-items:center;font-size:13px;letter-spacing:0}
+    .links{display:flex;gap:22px;color:#e3ddcf;font-size:14px}.links a:hover{color:var(--gold2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--gold);background:linear-gradient(135deg,var(--gold2),var(--gold));color:#15120a;font-weight:bold;border-radius:7px;padding:12px 20px;cursor:pointer;font-size:15px;transition:.2s}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.06)}.btn.ghost{background:transparent;color:var(--gold2)}
+    .hero{padding:74px 0 58px;overflow:hidden;position:relative;background:radial-gradient(ellipse at 15% 20%,#2b2414 0,transparent 38%),linear-gradient(120deg,#090909,#111 60%,#090909)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:48px}
+    .eyebrow{color:var(--gold);font-size:13px;letter-spacing:3px;font-weight:bold}
+    h1{font-size:clamp(36px,5vw,62px);line-height:1.25;margin:16px 0}
+    h1 span{color:var(--gold2)}.lead{color:#c8c2b6;max-width:580px;font-size:17px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}
+    .hero-art{min-height:330px;border:1px solid #62502b;border-radius:18px;background:linear-gradient(145deg,#1b1a17,#080808);display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 20px 70px #0008}
+    .hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #8d713c;border-radius:50%;width:230px;height:230px;opacity:.45}
+    .hero-art:after{width:270px;height:270px;opacity:.2}
+    .art-inner{position:relative;z-index:1;text-align:center;direction:ltr}
+    .art-inner .big{font-family:Georgia,serif;font-size:72px;letter-spacing:4px;color:var(--gold2);line-height:1.1}
+    .art-inner .small{font-size:13px;letter-spacing:7px;color:#e7d4a1;margin-top:12px}
+    .art-inner .rule{width:100px;height:1px;background:var(--gold);margin:18px auto}
+    section{padding:62px 0}.section-head{text-align:center;margin-bottom:32px}.section-head h2{font-size:30px;margin:0 0 8px}.section-head p{color:var(--muted);margin:0}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.feature{padding:22px;background:var(--panel);border:1px solid #292720;border-radius:12px;text-align:center}
+    .feature .ico{font-size:26px;color:var(--gold2)}.feature h3{margin:8px 0 5px;font-size:17px}.feature p{margin:0;color:var(--muted);font-size:14px}
+    .products{background:#0e0e0e;border-top:1px solid #211e18;border-bottom:1px solid #211e18}
+    .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .product{background:#151515;border:1px solid #302b20;border-radius:12px;overflow:hidden}
+    .product-image{height:185px;display:grid;place-items:center;background:linear-gradient(135deg,#242018,#0b0b0b);color:var(--gold2);font-size:42px}
+    .product-image span{border:1px solid #756035;border-radius:50%;width:92px;height:92px;display:grid;place-items:center}
+    .product-body{padding:18px}.product h3{margin:0 0 5px}.product p{margin:0 0 14px;color:var(--muted);font-size:14px}
+    .price{color:var(--gold2);font-weight:bold;margin-bottom:14px;display:block}.product .btn{width:100%}
+    .order-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;align-items:start}
+    .order-note{background:linear-gradient(145deg,#211b0f,#111);border:1px solid #584725;border-radius:14px;padding:26px}
+    .order-note h3{color:var(--gold2);margin-top:0}.order-note p,.order-note li{color:#c7c0b2;font-size:14px}
+    form{background:var(--panel);border:1px solid #302b20;border-radius:14px;padding:24px}
+    .field{margin-bottom:15px}.field label{display:block;font-size:14px;margin-bottom:6px;color:#e9e2d2}
+    input,select,textarea{width:100%;padding:12px;border:1px solid #403a2d;border-radius:7px;background:#0c0c0c;color:#fff;font:inherit}
+    input:focus,select:focus,textarea:focus{outline:1px solid var(--gold)}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .form-help{font-size:12px;color:var(--muted);margin:10px 0 0}
+    .notice{display:none;margin-top:14px;padding:12px;border:1px solid #7b6335;border-radius:8px;color:var(--gold2);font-size:14px}
+    .faq{max-width:780px;margin:auto}.faq details{border-bottom:1px solid #302b20;padding:17px 0}.faq summary{cursor:pointer;color:var(--gold2);font-weight:bold}.faq p{color:var(--muted);margin-bottom:0}
+    footer{border-top:1px solid #29251d;padding:28px 0;color:var(--muted);font-size:13px;text-align:center}
+    .footer-brand{font-family:Georgia,serif;color:var(--gold2);direction:ltr;letter-spacing:2px;font-size:20px;margin-bottom:5px}
+    @media(max-width:760px){.links{display:none}.hero{padding:48px 0}.hero-grid,.order-layout{grid-template-columns:1fr}.hero-art{min-height:260px}.features,.product-grid{grid-template-columns:1fr}.product-image{height:160px}section{padding:45px 0}.form-row{grid-template-columns:1fr}.section-head h2{font-size:25px}}
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap nav">
+      <a class="brand" href="#home"><span class="brand-mark">O&B</span><span>O&B STORE</span></a>
+      <nav class="links"><a href="#home">الرئيسية</a><a href="#products">منتجاتنا</a><a href="#why">علاش حنا؟</a><a href="#order">اطلب الآن</a></nav>
+      <a class="btn" href="#order">اطلب الآن</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">STYLE • QUALITY • TRUST</div>
+          <h1>اختيارات مميزة،<br><span>وتسوّق بكل راحة.</span></h1>
+          <p class="lead">مرحبا بيكم في O&B STORE. اكتشف منتجات مختارة بعناية، تجربة طلب بسيطة، وخدمة هدفها رضاك من أول خطوة حتى استلام الطلب.</p>
+          <div class="actions"><a class="btn" href="#products">اكتشف المنتجات</a><a class="btn ghost" href="#order">دير طلبك</a></div>
+        </div>
+        <div class="hero-art" aria-label="O&B STORE">
+          <div class="art-inner"><div class="big">O&amp;B</div><div class="rule"></div><div class="small">STORE</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="wrap">
+        <div class="section-head"><h2>علاش تختار O&amp;B STORE؟</h2><p>تجربة تسوّق بسيطة وواضحة</p></div>
+        <div class="features">
+          <div class="feature"><div class="ico">✦</div><h3>اختيارات بعناية</h3><p>منتجات نختاروها باش نقدمو لكم تجربة مليحة.</p></div>
+          <div class="feature"><div class="ico">◇</div><h3>طلب ساهل</h3><p>عمّر المعلومات المطلوبة وخلي علينا الباقي بعد تأكيد الطلب.</p></div>
+          <div class="feature"><div class="ico">↗</div><h3>تواصل واضح</h3><p>نأكدو تفاصيل المنتج والتوصيل قبل إتمام الطلب.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="wrap">
+        <div class="section-head"><h2>منتجاتنا</h2><p>تقدر تبدّل أسماء وصور وأسعار هاذ الأمثلة بمنتجاتك الحقيقية.</p></div>
+        <div class="product-grid">
+          <article class="product"><div class="product-image"><span>✦</span></div><div class="product-body"><h3>منتج مميز 01</h3><p>وصف قصير يشرح أهم ميزة في المنتج.</p><span class="price">السعر: أضف السعر</span><button class="btn choose-product" data-product="منتج مميز 01">اطلب هذا المنتج</button></div></article>
+          <article class="product"><div class="product-image"><span>◇</span></div><div class="product-body"><h3>منتج مميز 02</h3><p>وصف واضح ومختصر يساعد الزبون يختار.</p><span class="price">السعر: أضف السعر</span><button class="btn choose-product" data-product="منتج مميز 02">اطلب هذا المنتج</button></div></article>
+          <article class="product"><div class="product-image"><span>✧</span></div><div class="product-body"><h3>منتج مميز 03</h3><p>زيد هنا التفاصيل المهمة بلا مبالغة.</p><span class="price">السعر: أضف السعر</span><button class="btn choose-product" data-product="منتج مميز 03">اطلب هذا المنتج</button></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="order">
+      <div class="wrap">
+        <div class="section-head"><h2>دير طلبك</h2><p>عمّر المعلومات باش نوجدو تفاصيل طلبك.</p></div>
+        <div class="order-layout">
+          <aside class="order-note">
+            <h3>O&amp;B STORE</h3>
+            <p>من بعد ما تعمّر الفورم، تقدر تراجع تفاصيل الطلب قبل الإرسال.</p>
+            <ul><li>تأكد من رقم الهاتف.</li><li>اختار الولاية واللون أو النوع إذا كان متاح.</li><li>تأكد من السعر ومصاريف التوصيل مع المتجر قبل تأكيد الشراء.</li></ul>
+            <p><strong>ملاحظة:</strong> الفورم في هاذ النسخة واجهة مجانية. باش يوصلك الطلب فعليًا، لازم نربطوه بخدمة مجانية لاستقبال الطلبات أو برقم WhatsApp تاعك.</p>
+          </aside>
+          <form id="orderForm">
+            <div class="form-row">
+              <div class="field"><label for="fullname">الاسم واللقب *</label><input id="fullname" required placeholder="اكتب اسمك الكامل"></div>
+              <div class="field"><label for="phone">رقم الهاتف *</label><input id="phone" required inputmode="tel" placeholder="05 / 06 / 07 ..."></div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label for="wilaya">الولاية *</label><input id="wilaya" required placeholder="اكتب الولاية"></div>
+              <div class="field"><label for="product">المنتج *</label><select id="product" required><option value="">اختار المنتج</option><option>منتج مميز 01</option><option>منتج مميز 02</option><option>منتج مميز 03</option></select></div>
+            </div>
+            <div class="form-row">
+              <div class="field"><label for="delivery">طريقة التوصيل</label><select id="delivery"><option>مكتب التوصيل</option><option>للمنزل</option></select></div>
+              <div class="field"><label for="quantity">الكمية</label><select id="quantity"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
+            </div>
+            <div class="field"><label for="notes">ملاحظات إضافية (اختياري)</label><textarea id="notes" rows="3" placeholder="اللون أو تفاصيل أخرى..."></textarea></div>
+            <button class="btn" type="submit" style="width:100%">تحضير الطلب</button>
+            <p class="form-help">ما راحش يتبعث الطلب تلقائيًا في هاذ النسخة حتى نربطو الفورم بخدمة استقبال الطلبات.</p>
+            <div class="notice" id="notice" role="status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head"><h2>أسئلة شائعة</h2><p>معلومات تساعد الزبون قبل الطلب</p></div>
+        <div class="faq">
+          <details><summary>كيفاش نطلب؟</summary><p>اختار المنتج وعمّر معلوماتك في فورم الطلب. يتم تأكيد التفاصيل مع المتجر بعد ربط وسيلة التواصل.</p></details>
+          <details><summary>هل السعر يشمل التوصيل؟</summary><p>السعر ومصاريف التوصيل يتأكدوا حسب المنتج والولاية قبل تأكيد الطلب.</p></details>
+          <details><summary>كيفاش نعرف تفاصيل المنتج؟</summary><p>تقدر تزيد وصف المنتج، الصور الحقيقية، الألوان والمقاسات في هاذ الصفحة.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><div class="footer-brand">O&amp;B STORE</div><div>تسوّق بأناقة وثقة</div><div style="margin-top:8px">© <span id="year"></span> O&amp;B STORE</div></div></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('.choose-product').forEach(btn => btn.addEventListener('click', () => {
+      document.getElementById('product').value = btn.dataset.product;
+      document.getElementById('order').scrollIntoView({behavior:'smooth'});
+    }));
+    document.getElementById('orderForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const data = {
+        name: document.getElementById('fullname').value.trim(),
+        phone: document.getElementById('phone').value.trim(),
+        wilaya: document.getElementById('wilaya').value.trim(),
+        product: document.getElementById('product').value,
+        delivery: document.getElementById('delivery').value,
+        quantity: document.getElementById('quantity').value,
+        notes: document.getElementById('notes').value.trim()
+      };
+      const message = `تم تحضير معلومات الطلب:\nالاسم: ${data.name}\nالهاتف: ${data.phone}\nالولاية: ${data.wilaya}\nالمنتج: ${data.product}\nالتوصيل: ${data.delivery}\nالكمية: ${data.quantity}\nملاحظات: ${data.notes || 'لا يوجد'}\n\nهذه المعلومات لم تُرسل للمتجر بعد. اربط الفورم بخدمة استقبال الطلبات لإتمام الإرسال.`;
+      const notice = document.getElementById('notice');
+      notice.style.display = 'block';
+      notice.textContent = message;
+    });
+  </script>
+</body>
+</html>
